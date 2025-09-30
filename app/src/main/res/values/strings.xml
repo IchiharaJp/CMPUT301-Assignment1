@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Assign1CMPUT301</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="mainScreenText">
+        Hello! How are you feeling right now?
+    </string>
+    <string name="logScreenText">
+        Todays Log:
+    </string>
+
+<!--    Button text strings-->
+    <string name="goToLogBtnText">
+        See my daily summary
+    </string>
+    <string name="happyBtnText">
+        Happy :>
+    </string>
+    <string name="sadBtnText">
+        Sad :&lt;
+    </string>
+    <string name="angryBtnText">
+        Angry >:&lt;
+    </string>
+    <string name="surprisedBtnText">
+        Surprised :o
+    </string>
+    <string name="boredBtnText">
+        Bored :/
+    </string>
+    <string name="excitedBtnText">
+        Excited XD
+    </string>
+</resources>
