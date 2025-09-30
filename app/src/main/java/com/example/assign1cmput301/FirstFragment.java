@@ -46,7 +46,7 @@ public class FirstFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     FirstFragmentDirections.ActionFirstFragmentToSecondFragment action =
-                            FirstFragmentDirections.actionFirstFragmentToSecondFragment(log.getLogData());
+                            FirstFragmentDirections.actionFirstFragmentToSecondFragment(log.getLog());
                     NavHostFragment.findNavController(FirstFragment.this).navigate(action);
                 }
         });
@@ -56,16 +56,14 @@ public class FirstFragment extends Fragment {
             Button btn = view.findViewById(id);
             String type = btn.getText().toString();
 
-            String date = LocalDate.now().toString();
-            String time = LocalTime.now().toString().substring(0, 5);
-            String logText = "You clicked on " + type + " on " + date + " " + time;
+            EmoticonBTN emotionBtn = new EmoticonBTN(type);
 
             view.findViewById(id).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast t = Toast.makeText(getActivity(), logText, Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getActivity(), emotionBtn.getEmotionText(), Toast.LENGTH_SHORT);
                     t.show();
-                    log.addData(logText);
+                    log.addData(emotionBtn.getEmotionData());
                 }
             });
         }

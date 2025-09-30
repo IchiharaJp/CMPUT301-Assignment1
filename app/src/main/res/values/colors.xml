@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="happy">#D9C536</color>
+    <color name="sad">#3855E2</color>
+    <color name="bored">#736A6A</color>
+    <color name="angry">#E70707</color>
+    <color name="excited">#64B605</color>
+    <color name="surprised">#F6B44B</color>
+    <color name="summaryBtnColor">#63778E</color>
+
 </resources>
